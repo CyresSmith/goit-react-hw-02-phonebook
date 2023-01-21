@@ -7,16 +7,9 @@ const Button = ({
   disabled = false,
   children,
   iconSize,
-  onClick,
 }) => {
   return (
-    <StyledButton
-      type={type}
-      disabled={disabled}
-      onClick={() => {
-        onClick(children);
-      }}
-    >
+    <StyledButton type={type} disabled={disabled}>
       {Icon && <Icon size={iconSize} />}
       <ButtonText isIconThere={Icon}>{children}</ButtonText>
     </StyledButton>

@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { variant } from 'styled-system';
 import theme from 'theme';
 
-export const StyledButton = styled.button`
+export const StyledButton = styled('button')`
   display: flex;
   align-items: center;
   font-family: ${theme.fonts.body};
@@ -10,7 +11,7 @@ export const StyledButton = styled.button`
   padding: ${theme.space[3]};
   color: ${theme.colors.secondary};
   background-color: ${p =>
-    p.disabled ? theme.colors.muted : theme.colors.primary};
+    p.disabled ? theme.colors.muted : theme.colors.accent};
   cursor: pointer;
   border: ${theme.borders.none};
   border-radius: ${theme.radii.normal};
