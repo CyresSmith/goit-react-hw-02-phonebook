@@ -1,7 +1,6 @@
 import { Component } from 'react';
-import ContactForm from './ContactForm';
+import Phonebook from './Phonebook';
 import Box from './shared/Box';
-import Section from './shared/Section';
 
 class App extends Component {
   state = {};
@@ -9,9 +8,7 @@ class App extends Component {
   render() {
     return (
       <Box variant="container">
-        <Section title="Phonebook">
-          <ContactForm />
-        </Section>
+        <Phonebook />
       </Box>
     );
   }

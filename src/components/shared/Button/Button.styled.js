@@ -1,10 +1,8 @@
 import styled from 'styled-components';
-import { variant } from 'styled-system';
 import theme from 'theme';
 
 export const StyledButton = styled('button')`
-  display: flex;
-  align-items: center;
+  display: inline-flex;
   font-family: ${theme.fonts.body};
   font-size: ${theme.fontSizes.m};
   font-weight: ${theme.fontWeights.regular};

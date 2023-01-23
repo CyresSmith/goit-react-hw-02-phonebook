@@ -19,7 +19,7 @@ const Button = ({
 Button.propTypes = {
   icon: PropTypes.func,
   type: PropTypes.string,
-  disabled: PropTypes.func,
+  disabled: PropTypes.bool,
   children: PropTypes.string.isRequired,
   iconSize: PropTypes.number,
 };
