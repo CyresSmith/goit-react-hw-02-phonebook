@@ -105,11 +105,11 @@ class Phonebook extends Component {
               const { contacts } = this.state;
               const normalizedName = contact.name.toLowerCase();
 
-              const exists = contacts.filter(({ name }) => {
-                return name.toLowerCase().trim() === normalizedName;
-              });
+              const exists = contacts.find(
+                ({ name }) => name.toLowerCase().trim() === normalizedName
+              );
 
-              if (exists.length > 0) {
+              if (exists) {
                 Notify.failure(`${contact.name} already in contacts`, {
                   showOnlyTheLastOne: true,
                   position: 'right-bottom',
