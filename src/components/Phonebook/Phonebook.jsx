@@ -50,13 +50,10 @@ class Phonebook extends Component {
   };
 
   removeContact = e => {
-    const removedContactName =
-      e.currentTarget.parentNode.childNodes[0].childNodes[0].innerText.toLowerCase();
+    const removedContactId = e.currentTarget.id;
 
     this.setState(prevState => ({
-      contacts: prevState.contacts.filter(
-        ({ name }) => name.toLowerCase() !== removedContactName
-      ),
+      contacts: prevState.contacts.filter(({ id }) => id !== removedContactId),
     }));
   };
 

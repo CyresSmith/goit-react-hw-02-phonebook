@@ -30,7 +30,7 @@ const Contacts = ({ contacts, onRemove }) => {
               </Box>
             </Box>
 
-            <DeletBtn onClick={onRemove}>
+            <DeletBtn id={id} onClick={onRemove}>
               <MdPersonRemoveAlt1 size={20} color={theme.colors.white} />
             </DeletBtn>
           </Contact>
