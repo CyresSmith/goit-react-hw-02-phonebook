@@ -12,7 +12,6 @@ import Box from 'components/shared/Box';
 import theme from 'theme';
 
 const Contacts = ({ contacts, onRemove }) => {
-  //   console.log(contacts);
   return (
     <ContactsList>
       {contacts.map(contact => {
@@ -30,7 +29,7 @@ const Contacts = ({ contacts, onRemove }) => {
               </Box>
             </Box>
 
-            <DeletBtn id={id} onClick={onRemove}>
+            <DeletBtn onClick={() => onRemove(id)}>
               <MdPersonRemoveAlt1 size={20} color={theme.colors.white} />
             </DeletBtn>
           </Contact>
